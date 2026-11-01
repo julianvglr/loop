@@ -70,6 +70,9 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 /* ---------- Logo-Zeichen ---------- */
 .l-zeichen path { fill: none; stroke: var(--accent); stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; transition: stroke .6s; }
+/* Das l in der Überschrift ist das echte Zeichen aus der Menüleiste */
+.l-im-text { height: .74em; width: auto; vertical-align: 0; overflow: visible; margin: 0 .02em; }
+.l-im-text path { stroke-width: 2.4; }
 
 /* ---------- Hero ---------- */
 .hero { padding-block: clamp(64px, 11vw, 140px) 40px; text-align: left; position: relative; }
@@ -924,7 +927,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
     <section class="band huelle" id="mac">
         <div class="band-kopf">
             <p class="augenbraue vor">Desktop-App</p>
-            <h2 class="vor">Ein kleines l.<br>Oben in der Menüleiste.</h2>
+            <h2 class="vor">Ein kleines <svg class="l-zeichen l-im-text" viewBox="6.3 2.8 11.4 17.9" role="img" aria-label="l"><path d="M7.5 19.5C11 19.5 13.8 16.2 15.2 12.2 16.6 8.2 16.3 4 13.6 4S10 7.6 10.3 11.4C10.7 16 12.4 19.5 16.5 19.5"/></svg>.<br>Oben in der Menüleiste.</h2>
             <p class="lead vor">Dazu eine eigene Desktop-App für Mac und Windows, die alles zusammenbringt. Alles geht per Klick, jede Funktion ist in einem Satz erklärt, die Kürzel sind nur Abkürzungen.</p>
         </div>
         <div class="kacheln">
