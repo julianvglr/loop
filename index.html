@@ -133,6 +133,8 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 /* ---------- Bänder & Raster ---------- */
 .band { padding-block: clamp(80px, 12vw, 150px); }
+/* Die Designs enden mit einer flachen Widget-Reihe: weniger Luft zur Technik */
+#designs { padding-bottom: clamp(30px, 4vw, 50px); }
 .band-kopf { display: grid; gap: 18px; margin-bottom: clamp(36px, 6vw, 70px); }
 .band-kopf.mitte { text-align: center; justify-items: center; }
 .band-kopf .lead { max-width: 52ch; }
